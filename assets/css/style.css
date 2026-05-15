@@ -1,0 +1,273 @@
+/*==============================================*/
+/* Global Styling */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family:'Poppins', sans-serif;
+}
+/*==============================================*/
+/* Navbar */
+.custom-navbar{
+background:#0B1F3A;
+padding:15px 0;
+border-bottom:1px solid rgba(255,255,255,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+.navbar-brand{
+font-size:24px;
+color:#ffffff;
+}
+.nav-link{
+color:#ffffff;
+margin-left:15px;
+font-weight:500;
+}
+.nav-link:hover{
+color:#D4AF37;
+}
+.apply-btn{
+background:#D4AF37;
+color:#000 !important;
+border-radius:5px;
+}
+.apply-btn:hover{
+background:#ffffff;
+}
+/* Hero Section */
+.hero-section{
+min-height:100vh;
+background:#0B1F3A;
+padding:120px 0 80px;
+color:#ffffff;
+}
+.hero-title{
+font-size:52px;
+font-weight:700;
+line-height:1.3;
+}
+.hero-text{
+font-size:18px;
+color:#dcdcdc;
+}
+.hero-btn{
+background:#D4AF37;
+color:#000;
+padding:12px 30px;
+font-weight:600;
+border-radius:5px;
+}
+.hero-btn:hover{
+background:#ffffff;
+color:#000;
+}
+.hero-image{
+width:100%;
+max-width:650px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+/* Mobile Responsive */
+@media(max-width:768px){
+  .hero-section{
+    text-align:center;
+    padding-top:140px;
+  }
+  .hero-title{
+    font-size:36px;
+  }
+  .hero-text{
+    font-size:16px;
+  }
+  /* Buttons fix */
+  .hero-section .btn{
+    display:block;
+    width:100%;
+    margin:8px 0 !important;
+  }
+}
+/*==============================================*/
+/* Features Section */
+.features-section{
+padding:100px 0;
+background:#f8f9fa;
+}
+.section-title{
+font-size:40px;
+font-weight:700;
+color:#0B1F3A;
+}
+.section-text{
+color:#666;
+margin-top:10px;
+}
+/* Feature Card */
+.feature-card{
+background:#ffffff;
+padding:35px 25px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+/* Card Hover Effect */
+.feature-card:hover{
+transform:translateY(-10px);
+}
+/* Feature Icon */
+.feature-icon{
+font-size:42px;
+margin-bottom:20px;
+color:#D4AF37;
+transition:0.3s;
+}
+/* Icon Hover Effect */
+.feature-card:hover .feature-icon{
+transform:scale(1.15) rotate(5deg);
+}
+.feature-card h4{
+font-size:22px;
+font-weight:600;
+color:#0B1F3A;
+margin-bottom:15px;
+}
+.feature-card p{
+font-size:15px;
+color:#666;
+line-height:1.7;
+}
+/* Mobile Responsive */
+@media(max-width:768px){
+.section-title{
+font-size:32px;
+}
+.feature-card{
+padding:30px 20px;
+}
+}
+/*==============================================*/
+/* Eligibility Section */
+.eligibility-section{
+padding:100px 0;
+background:#ffffff;
+}
+/* Info Card */
+.info-card{
+background:#f8f9fa;
+padding:40px 30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+overflow:hidden;
+text-align:center;
+}
+.info-card:hover{
+transform:translateY(-8px);
+}
+/* Icon */
+.info-icon{
+font-size:42px;
+color:#D4AF37;
+margin-bottom:20px;
+transition:0.3s;
+display: inline-block;
+}
+.info-card:hover .info-icon{
+transform:scale(1.15)rotate(5deg) ;
+}
+/* Heading */
+.info-card h3{
+font-size:28px;
+font-weight:600;
+color:#0B1F3A;
+margin-bottom:20px;
+}
+/* Text */
+.info-card p{
+font-size:16px;
+color:#555;
+line-height:1.8;
+margin-bottom:12px;
+}
+/* Mobile Responsive */
+@media(max-width:768px){
+.info-card{
+padding:30px 20px;
+}
+.info-card h3{
+font-size:24px;
+}
+}
+/*========================*/
+/* Apply Section*/
+.apply-section{
+  padding:100px 0;
+  background:#f8f9fa;
+}
+.apply-form input{
+  padding:12px;
+  border-radius:6px;
+  border:1px solid #ddd;
+}
+.apply-form input:focus{
+  border-color:#D4AF37;
+  box-shadow:none;
+}
+/*=========================*/
+/* footer section*/
+.custom-footer{
+  background:#0B1F3A;
+  color:#fff;
+  padding:40px 0 70px;
+}
+.custom-footer h5{
+  font-weight:600;
+  margin-bottom:10px;
+}
+.custom-footer p{
+  color:#dcdcdc;
+  margin-bottom:8px;
+}
+.custom-footer hr{
+  border-color:rgba(255,255,255,0.2);
+}
+/* ==Sticky Button - Mobile Only== */
+.sticky-apply-btn {
+  display: none;
+}
+@media(max-width: 992px) {
+  .sticky-apply-btn {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #D4AF37;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+/*== Mobile Section Spacing Fix== */
+@media(max-width: 992px) {
+  .features-section,
+  .eligibility-section,
+  .apply-section {
+    padding: 50px 0;
+  }
+
+  .eligibility-section .mb-5,
+  .features-section .mb-5,
+  .apply-section .mb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+}
